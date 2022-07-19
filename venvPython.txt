@@ -1,0 +1,7 @@
+# windows
+python -m venv <venv-name>
+# To activate
+#C:\Users\..\<venv-name>
+.\Scripts\activate.bat
+
+# linux
