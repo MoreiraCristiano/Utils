@@ -1,7 +1,11 @@
 # windows
-python -m venv <venv-name>
-# To activate
-#C:\Users\..\<venv-name>
-.\Scripts\activate.bat
+- python -m venv venv
+- venv\Scripts\activate.bat
 
-# linux
+# linux (com lib virtualenv)
+- pip install virtualenv
+- virtualenv venv
+- virtualenv -p <pythonpath> venv
+- soruce venv/bin/activate
+
+
