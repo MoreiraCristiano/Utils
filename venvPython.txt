@@ -6,6 +6,6 @@
 - pip install virtualenv
 - virtualenv venv
 - virtualenv -p <pythonpath> venv
-- soruce venv/bin/activate
+- source venv/bin/activate
 
 
