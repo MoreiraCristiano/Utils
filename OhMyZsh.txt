@@ -1,0 +1,21 @@
+# Instalando ZSH
+
+- sudo apt install zsh -y
+- zsh --version
+- zsh
+
+# Instalando ohmyzsh
+
+- sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Plugins
+
+- git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+- git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+- plugins=(git zsh-syntax-highlighting  zsh-autosuggestions)
+
+# Themes
+
+- git clone https://github.com/cdimascio/lambda-zsh-theme.git
+- Inside cloned... cp cdimascio-lambda.zsh-theme $ZSH_CUSTOM/themes
+- ZSH_THEME="cdimascio-lambda"
