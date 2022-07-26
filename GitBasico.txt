@@ -1,0 +1,99 @@
+==========================================================================
+                    INSTALAR E CONFIGURAR O GIT
+
+# Instalar git na central de software
+
+# Configuracao de usuario basica git
+    - git config --global user.name "NomeSobrenome"
+    - git config --global user.email "seu_email@email.com" 
+    - git config --list
+
+# Criar Conta no GitHub/GitLab
+
+# Conectar por chave ssh o git ao repositório
+    - https://bigdataagronegocio.wordpress.com/2017/03/11/
+            tutorial-de-instalacao-e-configuracao-do-gitlab-no-windows/
+
+    - gerar chave ssh: 
+        ssh-keygen -t rsa -b 4096 -C "email"
+        ssh-keygen -t rsa -C "email"
+
+    - visualizar pub_key: cat ~/.ssh/id_rsa.pub
+
+    - Colocar nas configuracoes do github
+
+    - Testar com:
+        ssh -T git@github.com
+
+==========================================================================
+                            CRIAR REPOSITORIOS 
+
+# Criar repositório local
+    - git init
+
+# Criar repositório remoto
+    - New repository
+
+==========================================================================
+                            DEFINIR BRANCH
+
+# Definir o Branch principal
+    - git branch -M main
+
+# Criar outros Branches
+    - git branch <nome>
+
+# Navegar entre os Branches
+    - git checkout <nome>
+
+# Cria e ja altera pro novo branch
+    - git checkout -b <nome>
+
+==========================================================================
+                            LIGAR REPOSITORIOS
+
+# Conectar repositorio local com o remoto
+    - git remote add origin <ssh/http>
+
+==========================================================================
+                            TRACK FILES
+
+# Verificar árvore de pendencias/arquivos Untracked
+    - git status
+
+# "Trackear" os arquivos do projeto
+    - git add -A
+
+==========================================================================
+                            COMMIT FILES
+
+# Criar commits no projeto
+    - git commit -m "mensagem"
+
+# Verificar commits
+    - git log
+
+# Navegar entre commits é possível
+    - git checkout <hash do commit>
+
+========================================================================== 
+                                PUSH
+
+# Enviar seu repositorio local para o branch do repositorio remoto
+    - git push -u origin <branch_name>
+
+========================================================================== 
+                        IGNORANDO ARQUIVOS
+
+# Para não adicionar arquivos ao repositorio (nao "trackear")
+    - touch .gitignore
+    - Dentro do arquivo adicionar os diretorios que devem ser ignorados
+      pelo comando git add -A e consequentemente pelo git commit.
+
+========================================================================== 
+                        CLONAR REPOSITORIO
+
+# Gerar uma cópia exata do repositorio publico
+    - git clone <ssh/http>
+
+========================================================================== 
