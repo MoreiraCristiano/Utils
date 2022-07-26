@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # windows
 python -m venv <venv-name>
 # To activate
@@ -16,6 +15,3 @@ python -m venv <venv-name>
 - virtualenv venv
 - virtualenv -p <pythonpath> venv
 - source venv/bin/activate
-
-
->>>>>>> 0ce7c80608e6db933732d58f82a2f153026b591c
