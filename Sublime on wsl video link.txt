@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=nBzZJ2rRkgE
+
+
+
+cd $HOME
+sudo mkdir bin/
+cd bin/
+sudo ln -s "/mnt/c/Program Files/Sublime Text 3/subl.exe" st
+sudo nano ~/.bashrc
+export PATH="$PATH:/$HOME/bin"

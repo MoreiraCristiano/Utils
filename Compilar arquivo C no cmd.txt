@@ -1,0 +1,5 @@
+echo -e "\nExecuting your code. . .\n"
+g++ -o main.out -g <arquivos.cpp> 
+./main.out
+
+Arquivo .bat pra rodar
