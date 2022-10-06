@@ -1,3 +1,11 @@
-Go to https://pypi.org/project/pip/#files
-Download and extract the archive file.
-Run python setup.py install
+To do this Pip and Python in both machines need to be the same
+
+**On the machine where I have Internet access**
+pip download pylint -d "D:\newpy\pylintDep"
+tar cvfz pylint.tgz pylintdep
+
+**On the destination machine that does not have Internet access**
+cd C:\destination
+tar xvfz pylint.tgz
+cd pylintdep
+pip install pylint-2.8.3-py3-none-any.whl -f ./ --no-index
