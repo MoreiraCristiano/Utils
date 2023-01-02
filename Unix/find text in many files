@@ -1,0 +1,1 @@
+grep -R  "Meu Texto" /home/blablabla/ | cut -d: -f1 | uniq
