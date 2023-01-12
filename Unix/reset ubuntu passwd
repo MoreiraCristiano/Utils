@@ -1,0 +1,14 @@
+** Quebrar senha Ubuntu:**
+
+no momento do Boot Apertar Shift logo após o Boot
+
+Advanced mode --> Security mode --> Drop to shell
+
+ 
+** Criar Usuário **
+
+sudo useradd testuser
+
+sudo passwd testuser
+
+usermod -aG sudo testuser
